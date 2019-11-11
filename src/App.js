@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { BrowserRouter as Router, Route, Redirect, Link } from 'react-router-dom'
+import './App.css';
+import { Header } from 'semantic-ui-react';
+
+
+import Main from './components/main';
+import Detail from './components/detail'
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <HeaderPresentation/>
+        <Route exact path="/" component={ Main }/>
+        <Route exact path="/detail/:id" component={ Detail }/>
+        <Redirect to="/" />
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+const HeaderPresentation = () => (
+  <h2 className="ui dividing header">
+      <div className="header-block">
+          <Header className="header-style" as='h1'>
+              <Link 
+                  to="/" 
+                  className="margin-left30px pointer"
+                  style={{ color:'black'}}
+              >
+                  Weather
+              </Link>
+          </Header>
+      </div>
+  </h2>
+)

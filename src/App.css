@@ -20,3 +20,42 @@
 .App-link {
   color: #09d3ac;
 }
+
+.image-style {
+  width: 40px;
+  height: 40px;
+}
+
+.weather-block:hover{
+  background-color: #09d3ac;
+}
+
+.Main-block {
+  margin-top:40px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.trash-style:hover {
+  color:red;
+}
+
+.margin-left30px{
+  margin-left: 30px;
+}
+
+.header-style{
+  text-align: left;
+}
+
+.plus-icon:hover{
+  color: greenyellow;
+}
+
+
+.header-block{
+  margin-top:10px;
+  margin-bottom: 10px ;
+}
