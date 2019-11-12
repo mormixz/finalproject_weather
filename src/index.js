@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
 
 const initialDB = {
-    "ListID" :[
+    ListID:[
         {
             "id":1609350,
             "lng": 100.51667,
