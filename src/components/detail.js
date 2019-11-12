@@ -3,11 +3,12 @@ import React, { Component } from 'react';
 // import config from '../config.json';
 import DetailPresent from './detail_present';
 import { Container, Placeholder, Grid, Divider } from 'semantic-ui-react'
+import fakeDB from '../fakeDB';
 
-const WEATHER_API_KEY = process.env.WEATHER_API_KEY
+const WEATHER_API_KEY = fakeDB.weather_api_key
 const WEATHER = "http://api.openweathermap.org/data/2.5/weather"
 
-const SEARCH_API_KEY = process.env.FLICKR_API_KEY
+const SEARCH_API_KEY = fakeDB.flickr_api_key
 const SEARCH = 'https://api.flickr.com/services/rest?method=flickr.photos.search&format=json&nojsoncallback=1'
 
 class detail extends Component {
@@ -62,6 +63,8 @@ class detail extends Component {
                             results.photos.photo.map((photo,index)=>{
                                 if(index<20){
                                     return <Thumbnail photo={ photo } key={ index }/>
+                                }else{
+                                    return ""
                                 }
                             })
                         :

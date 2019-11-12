@@ -1,6 +1,10 @@
-{
-    "country": [
-    {
+
+const fakeDB = {
+    weather_api_key : process.env.REACT_APP_WEATHER_API_KEY,
+    googlemap_api_key : process.env.REACT_APP_GOOGLEMAP_API_KEY,
+    flickr_api_key : process.env.REACT_APP_FLICKR_API_KEY,
+    country:[
+        {
         "id": 1153555,
         "name": "Changwat Chumphon",
         "country": "TH",
@@ -209,3 +213,4 @@
     }
     ]
 }
+export default fakeDB;

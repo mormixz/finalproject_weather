@@ -4,14 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
-import db from './initialdb.json';
 
+const initialDB = {
+    "ListID" :[
+        {
+            "id":1609350,
+            "lng": 100.51667,
+            "lat": 13.75
+        }
+    ]
+}
 const DB = localStorage.getItem('ListID')
 
 if(DB){
     localStorage.setItem('ListID',DB)
 }else{
-    localStorage.setItem('ListID',JSON.stringify(db.ListID))
+    localStorage.setItem('ListID',JSON.stringify(initialDB))
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

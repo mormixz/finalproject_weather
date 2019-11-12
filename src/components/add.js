@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 
-import city from '../country.json';
-// import config from '../config.json';
+import fakeDB from '../fakeDB';
 
 const Add = (props) => {
-    const [country,setCountry] = useState(city.country)
+    const [country,setCountry] = useState(fakeDB.country)
     const [center,setCenter] = useState({
         lat:13.75,
         lng:100.51667
@@ -20,7 +19,7 @@ const Add = (props) => {
       };
 
     const addWeather = (data) => {
-        console.log(data)
+        // console.log(data)
         const ListID = JSON.parse(localStorage.getItem('ListID'))
         const Temp = {
             "id":data.id,
@@ -28,7 +27,7 @@ const Add = (props) => {
             "lat": data.coord.lat
         }
         ListID.push(Temp)
-        console.log(ListID)
+        // console.log(ListID)
 
         localStorage.setItem('ListID',JSON.stringify(ListID))
         alert('Add Complete')
@@ -55,10 +54,10 @@ const Add = (props) => {
                 Tempcenter.lat=search_data[0].coord.lat
                 Tempcenter.lng=search_data[0].coord.lon
             }else{
-                search_data = city.country
+                search_data = fakeDB.country
             }
         }else{
-            search_data = city.country
+            search_data = fakeDB.country
         }
 
         setLoading(false)
@@ -107,6 +106,6 @@ const Add = (props) => {
     );
 }
 export default GoogleApiWrapper({
-    apiKey: process.env.GOOGLEMAP_API_KEY
+    apiKey: fakeDB.googlemap_api_key
 })(Add);
 
