@@ -45,7 +45,7 @@ const Add = (props) => {
         }
 
         setLoading(true)
-        if( query ){
+        if(query){
             search_data = tempCountry.filter((data)=>
                 data.country.toUpperCase().includes(query.toUpperCase())|| 
                 data.name.toUpperCase().includes(query.toUpperCase())

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Container, Table, Icon, List } from 'semantic-ui-react';
+import { Container, Table, Icon } from 'semantic-ui-react';
 
 import SubTable from './table';
 import config from '../config.json';

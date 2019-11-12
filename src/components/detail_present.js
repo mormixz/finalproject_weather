@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Segment, Statistic, Header, Label } from 'semantic-ui-react';
+import { Container, Segment, Statistic, Header,Placeholder } from 'semantic-ui-react';
 
 const weekday=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 
@@ -42,7 +42,22 @@ const DetailPresent = (props) => {
                             </div>
                         </div>
                     </Segment>
-                :   ""
+                :   <Segment>
+                        <Placeholder>
+                            <Placeholder.Paragraph>
+                            <Placeholder.Line />
+                            <Placeholder.Line />
+                            <Placeholder.Line />
+                            <Placeholder.Line />
+                            <Placeholder.Line />
+                            </Placeholder.Paragraph>
+                            <Placeholder.Paragraph>
+                            <Placeholder.Line />
+                            <Placeholder.Line />
+                            <Placeholder.Line />
+                            </Placeholder.Paragraph>
+                        </Placeholder>
+                    </Segment>
             }
         </Container>
     )

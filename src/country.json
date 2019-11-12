@@ -28,6 +28,15 @@
         }
     },
     {
+        "id": 6695671,
+        "name": "Sukhumvit",
+        "country": "TH",
+        "coord": {
+          "lon": 100.556061,
+          "lat": 13.73502
+        }
+      },
+    {
         "id": 1609283,
         "name": "Laem Ngop",
         "country": "TH",
@@ -97,6 +106,105 @@
         "coord": {
         "lon": -84.03772,
         "lat": 42.150318
+        }
+    },
+    {
+        "id": 3128759,
+        "name": "Província de Barcelona",
+        "country": "ES",
+        "coord": {
+        "lon": 2,
+        "lat": 41.666672
+        }
+    },
+    {
+        "id": 6690840,
+        "name": "Camp Nou",
+        "country": "ES",
+        "coord": {
+        "lon": 2.12461,
+        "lat": 41.379379
+        }
+    },
+    {
+        "id": 4162811,
+        "name": "Lorraine",
+        "country": "US",
+        "coord": {
+        "lon": -82.39537,
+        "lat": 27.43199
+        }
+    },
+    {
+        "id": 4200051,
+        "name": "Henry County",
+        "country": "US",
+        "coord": {
+        "lon": -84.149918,
+        "lat": 33.450111
+        }
+    },
+    {
+        "id": 4204349,
+        "name": "Lake Cindy Estates",
+        "country": "US",
+        "coord": {
+        "lon": -84.297699,
+        "lat": 33.414001
+        }
+    },
+    {
+        "id": 4686903,
+        "name": "Dripping Springs",
+        "country": "US",
+        "coord": {
+        "lon": -98.086678,
+        "lat": 30.19021
+        }
+    },
+    {
+        "id": 5718099,
+        "name": "Carver",
+        "country": "US",
+        "coord": {
+        "lon": -122.497307,
+        "lat": 45.394569
+        }
+    },
+    {
+        "id": 4170452,
+        "name": "Rolling Hills",
+        "country": "US",
+        "coord": {
+        "lon": -82.335098,
+        "lat": 29.117201
+        }
+    },
+    {
+        "id": 5759333,
+        "name": "Washington County",
+        "country": "US",
+        "coord": {
+        "lon": -123.00293,
+        "lat": 45.51405
+        }
+    },
+    {
+        "id": 5730924,
+        "name": "Helvetia",
+        "country": "US",
+        "coord": {
+        "lon": -122.917328,
+        "lat": 45.595669
+        }
+    },
+    {
+        "id": 4168985,
+        "name": "Polk City",
+        "country": "US",
+        "coord": {
+        "lon": -81.823967,
+        "lat": 28.18251
         }
     }
     ]
