@@ -19,7 +19,7 @@ const DB = localStorage.getItem('ListID')
 if(DB){
     localStorage.setItem('ListID',DB)
 }else{
-    localStorage.setItem('ListID',JSON.stringify(initialDB))
+    localStorage.setItem('ListID',JSON.stringify(initialDB.ListID))
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
