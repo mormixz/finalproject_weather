@@ -8,7 +8,7 @@ import db from './initialdb.json';
 
 const DB = localStorage.getItem('ListID')
 
-if(DB.length!==0){
+if(DB){
     localStorage.setItem('ListID',DB)
 }else{
     localStorage.setItem('ListID',JSON.stringify(db.ListID))

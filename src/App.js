@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route , Link } from 'react-router-dom'
 import './App.css';
 import { Header } from 'semantic-ui-react';
 
-
 import Main from './components/main';
 import Detail from './components/detail'
 import Add from './components/add';

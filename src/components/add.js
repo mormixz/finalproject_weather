@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 
 import city from '../country.json';
-import config from '../config.json';
+// import config from '../config.json';
 
 const Add = (props) => {
     const [country,setCountry] = useState(city.country)
@@ -107,6 +107,6 @@ const Add = (props) => {
     );
 }
 export default GoogleApiWrapper({
-    apiKey: config.GOOGLEMAP_API_KEY
+    apiKey: process.env.GOOGLEMAP_API_KEY
 })(Add);
 

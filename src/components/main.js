@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 import { Container, Table, Icon } from 'semantic-ui-react';
 
 import SubTable from './table';
-import config from '../config.json';
+// import config from '../config.json';
 import LoadingTable from './loading_table';
+import dotenv from 'dotenv';
 
-const API_KEY = config.WEATHER_API_KEY
+// dotenv.config();
+const API_KEY = process.env.WEATHER_API_KEY
 const MainURL = "http://api.openweathermap.org/data/2.5/weather"
 
 class Main extends Component {
@@ -19,7 +21,8 @@ class Main extends Component {
     }
 
     componentDidMount(){
-        this.getWeatherAPI()
+        console.log("APIKEY",API_KEY,1)
+        // this.getWeatherAPI()
     }
 
     componentDidUpdate(oldProps, oldState){
