@@ -6,11 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
 
 const initialDB = [
-        {
-            "id":1609350,
-            "lng": 100.51667,
-            "lat": 13.75
-        }
+    {
+        "id":1609350,
+        "lng": 100.51667,
+        "lat": 13.75
+    }
 ]
 
 const DB = localStorage.getItem('ListID')
