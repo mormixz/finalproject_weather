@@ -51,7 +51,14 @@
 }
 
 .plus-icon:hover{
-  color: greenyellow;
+  color: green;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
 }
 
 

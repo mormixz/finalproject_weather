@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
+import db from './initialdb.json';
+
+const DB = localStorage.getItem('ListID')
+
+if(DB.length!==0){
+    localStorage.setItem('ListID',DB)
+}else{
+    localStorage.setItem('ListID',JSON.stringify(db.ListID))
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

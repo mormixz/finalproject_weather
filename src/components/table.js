@@ -8,7 +8,6 @@ const SubTable = (props) => {
         props.history.push(`/detail/${props.item.id}`)
     }
 
-    console.log(props.item)
     const imgsrc=`http://openweathermap.org/img/w/${props.item.weather[0].icon}.png`
     const curTemp= props.item.main.temp
     
@@ -20,7 +19,7 @@ const SubTable = (props) => {
                 </div>
             </Table.Cell>
             <Table.Cell>
-                <img className="image-style" src={imgsrc} alt="10n"/>
+                <img className="image-style" src={imgsrc} alt={props.item.weather[0].icon}/>
             </Table.Cell>
             <Table.Cell >
                 <Statistic horizontal>
@@ -32,7 +31,7 @@ const SubTable = (props) => {
                 <Icon 
                     className="pointer trash-style" 
                     name="trash alternate"
-                    onClick={()=>props.deleteWeather(props.item.id)}
+                    onClick={(e)=>props.deleteWeather(e,props.item.id)}
                 />
             </Table.Cell>
         </Table.Row>

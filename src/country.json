@@ -1,0 +1,103 @@
+{
+    "country": [
+    {
+        "id": 1153555,
+        "name": "Changwat Chumphon",
+        "country": "TH",
+        "coord": {
+        "lon": 98.833328,
+        "lat": 10.33333
+        }
+    },
+    {
+        "id": 1156944,
+        "name": "Ban Khron",
+        "country": "TH",
+        "coord": {
+        "lon": 99.099998,
+        "lat": 10.28333
+        }
+    },
+    {
+        "id": 1609350,
+        "name": "Bangkok",
+        "country": "TH",
+        "coord": {
+        "lon": 100.51667,
+        "lat": 13.75
+        }
+    },
+    {
+        "id": 1609283,
+        "name": "Laem Ngop",
+        "country": "TH",
+        "coord": {
+        "lon": 102.39489,
+        "lat": 12.1717
+        }
+    },
+    {
+        "id": 3007202,
+        "name": "La Portanière",
+        "country": "FR",
+        "coord": {
+        "lon": 6.17341,
+        "lat": 43.248611
+        }
+    },
+    {
+        "id": 6441676,
+        "name": "Wittenheim",
+        "country": "FR",
+        "coord": {
+        "lon": 7.33333,
+        "lat": 47.816669
+        }
+    },
+    {
+        "id": 6438569,
+        "name": "Wattrelos",
+        "country": "FR",
+        "coord": {
+        "lon": 3.21667,
+        "lat": 50.700001
+        }
+    },
+     {
+        "id": 2130037,
+        "name": "Hokkaidō",
+        "country": "JP",
+        "coord": {
+        "lon": 141.346603,
+        "lat": 43.06451
+        }
+    },
+    {
+        "id": 1861387,
+        "name": "Ishikawa-ken",
+        "country": "JP",
+        "coord": {
+        "lon": 136.770493,
+        "lat": 36.77145
+        }
+    },
+    {
+        "id": 1857578,
+        "name": "Matoba",
+        "country": "JP",
+        "coord": {
+        "lon": 133.949997,
+        "lat": 34.25
+        }
+    },
+     {
+        "id": 5000598,
+        "name": "Manchester",
+        "country": "US",
+        "coord": {
+        "lon": -84.03772,
+        "lat": 42.150318
+        }
+    }
+    ]
+}
