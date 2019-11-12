@@ -19,8 +19,7 @@ class detail extends Component {
     }
 
     componentDidMount(){
-        this.getWeatherAPI()
-        
+        this.getWeatherAPI()   
     }
 
     getWeatherAPI = () =>{
@@ -63,13 +62,11 @@ class detail extends Component {
                             results.photos.photo.map((photo,index)=>{
                                 if(index<20){
                                     return <Thumbnail photo={ photo } key={ index }/>
-                                }else{
-                                    return ""
                                 }
                             })
                         :
-                            <Grid centered>
-                              {items}
+                            <Grid centered style={{ marginTop:"10px"}}>
+                                {items}
                             </Grid>
                         
                     }
@@ -90,7 +87,7 @@ const Thumbnail = (props) => {
 }
 
 const LoadImage = (props) => (
-    <Placeholder style={{ height: '150px', width: '150px', margin:'3px' }}>
+    <Placeholder style={{ height: '150px', width: '150px', margin:'4px' }}>
         <Placeholder.Image />
     </Placeholder>
 )

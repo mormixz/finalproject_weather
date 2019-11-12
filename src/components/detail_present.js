@@ -6,7 +6,7 @@ const weekday=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Su
 
 const DetailPresent = (props) => {
     const { data } = props;
-    // console.log(data)
+    
     let date
     if('dt' in data){
         date = new Date(data.dt).getDay()
