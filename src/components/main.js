@@ -13,13 +13,14 @@ const MainURL = "http://api.openweathermap.org/data/2.5/weather"
 class Main extends Component {
 
     state = {
-        ListID : [...JSON.parse(localStorage.getItem('ListID'))],
+        ListID : JSON.parse(localStorage.getItem('ListID')),
         ListData:[],
         is_loading:false,
         open:false,
     }
 
     componentDidMount(){
+        console.log(this.state.ListID)
         this.getWeatherAPI()
     }
 
