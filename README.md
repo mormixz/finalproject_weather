@@ -8,11 +8,12 @@
 ## Features
 * Add and Remove Weather
 * Show Weather Detail and Example pictures of that place
+* Show the weather for the next 6 time periods
 * The Location can be added by clicking on the googlemap marker
 * Can search for places by name or country
 
 ## Libraries and APIS
-* [Google Map React](https://github.com/google-map-react/google-map-react)
+* [Google Map React](https://github.com/fullstackreact/google-maps-react)
 * [Semantic UI React](https://react.semantic-ui.com)
 * [OpenWeatherMap](https://openweathermap.org/current)
 * [Google Maps Platform](https://developers.google.com/maps/documentation/?_ga=2.192568554.-1351625016.1573011238&_gac=1.57247704.1573701148.CjwKCAiA8K7uBRBBEiwACOm4d8uDSE63erpnNNMHSz8dFuM6N2BA31nQdBug0nYMaFEqiGCfPGjYCxoCm7UQAvD_BwE)

@@ -6,31 +6,47 @@ import { Container, Placeholder, Grid, Divider } from 'semantic-ui-react'
 import fakeDB from '../fakeDB';
 
 const WEATHER_API_KEY = fakeDB.weather_api_key
-const WEATHER = "https://api.openweathermap.org/data/2.5/weather"
+const CURRENT_WEATHER = "https://api.openweathermap.org/data/2.5/weather"
+const WEATHER = "https://api.openweathermap.org/data/2.5/forecast"
 
 const SEARCH_API_KEY = fakeDB.flickr_api_key
 const SEARCH = 'https://api.flickr.com/services/rest?method=flickr.photos.search&format=json&nojsoncallback=1'
+
+
+const imageNo = 14
 
 class detail extends Component {
 
     state = {
         detailData:{},
-        results:{}
+        results:{},
+        ListWeather:[]
     }
 
     componentDidMount(){
-        this.getWeatherAPI()   
+        this.getCurrentWeatherAPI()  
+        this.getListWeatherAPI()
     }
 
-    getWeatherAPI = () =>{
+    getCurrentWeatherAPI = () =>{
         const { id } = this.props.match.params
-        fetch(`${WEATHER}?id=${id}&appid=${WEATHER_API_KEY}&units=metric`)
+        fetch(`${CURRENT_WEATHER}?id=${id}&appid=${WEATHER_API_KEY}&units=metric`)
         .then( response => response.json())
         .then( data => {
             this.setState({ detailData:data })
-            this.getLocation(data.coord)
+            this.getLocation(data.coord) 
         })
         .catch( err => alert(err) )    
+    }
+
+    getListWeatherAPI = () =>{
+        const { id } = this.props.match.params
+        fetch(`${WEATHER}?id=${id}&appid=${WEATHER_API_KEY}&units=metric&cnt=7`)
+        .then( response => response.json())
+        .then( data => {
+            this.setState({ ListWeather:data })
+        })
+        .catch( err => alert(err) ) 
     }
 
     getLocation = (coord) =>{
@@ -41,11 +57,11 @@ class detail extends Component {
     }
     
     render() {
-        const { detailData,results } = this.state;
+        const { detailData,results,ListWeather } = this.state;
 
         const items = []
 
-        for (let i=0;i<20;i++) {
+        for (let i=0;i<imageNo;i++) {
             items.push(<LoadImage key={i} index={i}/>)
         }
 
@@ -53,14 +69,15 @@ class detail extends Component {
             <>
                 <DetailPresent
                     data={detailData}
+                    ListWeather={ListWeather}
                 />
                 <Divider hidden/>
-                <Container image>
+                <Container>
                     {
                         'photos' in results
                         ?
                             results.photos.photo.map((photo,index)=>{
-                                if(index<20){
+                                if(index<imageNo){
                                     return <Thumbnail photo={ photo } key={ index }/>
                                 }else{
                                     return ""
