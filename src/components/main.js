@@ -20,7 +20,7 @@ class Main extends Component {
     }
 
     componentDidMount(){
-        console.log(this.state.ListID)
+        // console.log(this.state.ListID)
         this.getWeatherAPI()
     }
 
@@ -65,8 +65,8 @@ class Main extends Component {
             <>  
                 <Container text>
                     <div className="Main-block">
-                        <div style={{ textAlign: 'right'}} className="pointer plus-icon" onClick={this.gotoAdd}>
-                            <Icon name='plus' circular/>
+                        <div style={{ textAlign: 'right'}}>
+                            <Icon name='plus' className="pointer plus-icon" onClick={this.gotoAdd} circular/>
                         </div>
                         {this.state.ListID.length !==0
                             ?<Table>
@@ -84,7 +84,7 @@ class Main extends Component {
                                         :
                                         this.state.ListID.map((item,index)=>{
                                             return <LoadingTable
-                                                    key={index}
+                                                        key={index}
                                                     />
                                         })
                                     }
