@@ -8,7 +8,7 @@
 ## Features
 * Add and Remove Weather
 * Show Weather Detail and Example pictures of that place
-* Show the weather for the next 6 time periods
+* Show the weather for the next 7 time periods
 * The Location can be added by clicking on the googlemap marker
 * Can search for places by name or country
 

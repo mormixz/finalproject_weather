@@ -13,7 +13,6 @@ const DetailPresent = (props) => {
     const timestap = data.dt+timezone
     let currentdate = new Date(timestap*1000)
 
-
     const day = currentdate.getUTCDay()
 
     return(
@@ -119,8 +118,6 @@ const Content = (props) => {
     }else{
         date = `${date} AM`
     }
-    console.log(props.hoursNow)
-    console.log(currentdate.getUTCHours())
 
     return(
         <Grid.Column>
