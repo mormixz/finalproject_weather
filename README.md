@@ -3,13 +3,13 @@
 	Web application for displaying the weather in each area as you want.
 
 ## Link 
-[My Project](http://pacific-woodland-48198.herokuapp.com)
+[My Project](https://pacific-woodland-48198.herokuapp.com)
 
 ## Features
 * Add and Remove Weather
 * Show Weather Detail and Example pictures of that place
 * The Location can be added by clicking on the googlemap marker
-* Can search for places by name
+* Can search for places by name or country
 
 ## Libraries and APIS
 * [Google Map React](https://github.com/google-map-react/google-map-react)

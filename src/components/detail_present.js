@@ -6,7 +6,7 @@ const weekday=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Su
 
 const DetailPresent = (props) => {
     const { data } = props;
-    
+
     let date
     if('dt' in data){
         date = new Date(data.dt).getDay()
@@ -25,7 +25,7 @@ const DetailPresent = (props) => {
                         <div>
                             <img 
                                 className="image-style" 
-                                src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} 
+                                src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`} 
                                 alt={data.weather[0].icon}
                             />
                         </div>

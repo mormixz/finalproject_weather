@@ -8,7 +8,7 @@ import LoadingTable from './loading_table';
 import fakeDB from '../fakeDB';
 
 const API_KEY = fakeDB.weather_api_key
-const MainURL = "http://api.openweathermap.org/data/2.5/weather"
+const MainURL = "https://api.openweathermap.org/data/2.5/weather"
 
 class Main extends Component {
 
