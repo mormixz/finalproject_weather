@@ -113,7 +113,7 @@ const Content = (props) => {
     
     const day = currentdate.getUTCDay()
     let date = currentdate.getUTCHours()
-    if(date>12 || date!==0){
+    if(date>12 && date!==0){
         date = `${date-12} PM `
     }else{
         date = `${date} AM`
