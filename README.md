@@ -3,14 +3,17 @@
 	Web application for displaying the weather in each area as you want.
 
 ## Link 
+---
 	[Link](http://pacific-woodland-48198.herokuapp.com)
 
 ## Features
+---
 	# Add and Remove weather
 		
 	# 
 
 ## Libraries
+---
 	* [Google Map React](https://github.com/google-map-react/google-map-react)
 	* [Semantic UI React](https://react.semantic-ui.com)
 	* [Openweathermap](https://openweathermap.org/current)
