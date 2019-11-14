@@ -6,9 +6,9 @@
 [My Project](http://pacific-woodland-48198.herokuapp.com)
 
 ## Features
-# Add and Remove weather
+### Add and Remove weather
 		
-# 
+### 
 
 ## Libraries
 * [Google Map React](https://github.com/google-map-react/google-map-react)
